@@ -1,20 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: <deployment-name>
+  name: matches-deployment
 spec:
   selector:
     matchLabels:
-      app: <app-name>
-  replicas: <no-of-replicas> !use 1
+      app: matches
+  replicas: 1
   template:
     metadata:
       labels:
-        app: <app-name>
+        app: matches
     spec:
-      containers: 
-        - name: <app-name>
-          image: <username>/<repository>:<remote-image-name>
+      containers:
+        - name: matches
+          image: giorgossklavounakos/devops:football-scores-1.0.0
           ports:
             - containerPort: 80
-  

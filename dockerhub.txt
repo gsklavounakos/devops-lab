@@ -1,0 +1,2 @@
+Docker Hub Repository: giorgossklavounakos/devops:football-scores-1.0.0 
+URL: https://hub.docker.com/r/giorgossklavounakos/devops 
